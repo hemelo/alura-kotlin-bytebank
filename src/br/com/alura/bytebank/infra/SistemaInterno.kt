@@ -6,7 +6,7 @@ import br.com.alura.bytebank.models.funcionario.FuncionarioAdmin
 
 class SistemaInterno {
 
-    fun entra(admin: Autenticavel, senha: Int, autenticado: () -> Unit = {}) {
+    fun entra(admin: Autenticavel, senha: Int, autenticado: SistemaInterno.() -> Unit = {}) {
         if (admin.autentica(senha)) {
             println("Bem vindo ao Bytebank")
             autenticado()
