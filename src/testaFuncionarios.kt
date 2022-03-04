@@ -1,4 +1,4 @@
-import br.com.alura.bytebank.CalculadoraBonificacao
+import br.com.alura.bytebank.infra.CalculadoraBonificacao
 import br.com.alura.bytebank.models.funcionario.Analista
 import br.com.alura.bytebank.models.funcionario.Diretor
 import br.com.alura.bytebank.models.funcionario.Gerente

@@ -1,4 +1,4 @@
-import br.com.alura.bytebank.SistemaInterno
+import br.com.alura.bytebank.infra.SistemaInterno
 import br.com.alura.bytebank.models.cliente.Cliente
 import br.com.alura.bytebank.models.funcionario.Diretor
 import br.com.alura.bytebank.models.funcionario.Gerente

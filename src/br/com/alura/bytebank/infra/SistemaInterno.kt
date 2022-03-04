@@ -1,4 +1,4 @@
-package br.com.alura.bytebank
+package br.com.alura.bytebank.infra
 
 import br.com.alura.bytebank.infra.Autenticavel
 import br.com.alura.bytebank.models.funcionario.Funcionario
@@ -6,9 +6,10 @@ import br.com.alura.bytebank.models.funcionario.FuncionarioAdmin
 
 class SistemaInterno {
 
-    fun entra(admin: Autenticavel, senha: Int) {
+    fun entra(admin: Autenticavel, senha: Int, autenticado: () -> Unit = {}) {
         if (admin.autentica(senha)) {
             println("Bem vindo ao Bytebank")
+            autenticado()
         } else {
             println("Falha na autenticação")
         }
